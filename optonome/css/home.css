@@ -1,0 +1,307 @@
+@font-face {
+    font-family: HelveticaNeue-med;
+    src: url(../fonts/HelveticaNeue_Medium.ttf);
+}
+
+@font-face {
+    font-family: HelveticaNeue-light;
+    src: url(../fonts/HelveticaNeue_Thin.ttf);
+}
+
+@font-face {
+    font-family: HelveticaNeue-bold;
+    src: url(../fonts/HelveticaNeue_Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: HelveticaNeue-med;
+}
+
+
+/* header elements */
+.header {
+    width: 100%;
+    height: 4.25rem;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 52px;
+}
+
+.nav-text {
+    font-size: 1.3rem;
+    color: #50aeb0;
+    padding-top: 5px;
+    margin-left: 5px;
+    font-family: HelveticaNeue-med;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-item {
+    margin-left: 1.75rem;
+    display: table-cell;
+    position: relative;
+}
+
+.nav-link {
+    color: #50aeb0;
+    font-size: 1rem;
+    font-family: HelveticaNeue-med;
+}
+
+.nav-link:hover{
+    color:#50aeb0 ;
+}
+
+
+/* underline----------------- */
+
+.nav-item:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background:#50aeb0;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nav-item:hover:after { 
+    width: 100%; 
+    left: 0; 
+  } 
+
+/* body elements */
+
+.banner-section {
+    background-color: white;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.body-img {
+    display: table-cell;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.75rem;
+    color: #50aeb0;
+    font-family: HelveticaNeue-bold;
+    margin-bottom: 15px;
+}
+
+.toggle-btn{
+    display: none;
+}
+
+.hamburger {
+    height: 30px;
+    cursor: pointer;
+}
+
+.desc-text {
+    font-size: 1rem;
+    color:#5d5b5b;
+    font-family: HelveticaNeue-med;
+}
+
+.sub-text {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    font-family: HelveticaNeue-bold;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 0.5rem;
+    width: 400px;
+    height: 55px;
+    grid-template-columns: 50% 50%;
+}
+
+.btn-get_started {
+    border: 1px solid #50aeb0;
+    border-radius: 10px;
+    background-color: #50aeb0;
+    color: #fff;
+    font-size: 20px;
+    font-family: HelveticaNeue-light;
+    padding: 10px 40px;
+    transition:font-size 0.2s;
+     -moz-transition:font-size 0.2s; /* Firefox 4 */
+     -webkit-transition:font-size 0.2s; /* Safari and Chrome */
+}
+
+.btn-get_started:hover {
+    font-size: 21px;
+    padding:10px 39px;
+}
+
+.btn-sign_in {
+    border: 1px solid #50aeb0;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #50aeb0;
+    font-size: 20px;
+    font-family: HelveticaNeue-light;
+    padding: 10px 40px;
+    transition:font-size 0.2s;
+     -moz-transition:font-size 0.2s; /* Firefox 4 */
+     -webkit-transition:font-size 0.2s; /* Safari and Chrome */
+}
+.btn-sign_in:hover {
+    font-size: 21px;
+}
+/* sidebar--toggle ------------------------------- */ 
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    Z-index: 999999;
+    right: 0;
+    margin-top: 12px;
+    width: 180px;
+    transform: translateX(+285px);
+    transition: transform 250ms ease-in-out;
+    background:white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.sidebarMenuInner{
+    margin:0;
+    padding-right: 25px;
+    text-align: right;
+    background-color:white;
+    height: 100%;
+}
+.sidebarMenuInner li{
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li a{
+    color:#50aeb0;
+    font-family:HelveticaNeue-med;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebarMenuInner li a:hover{
+    font-size: 1.05rem;
+}
+
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* media--query ----------------------------------------------- */
+
+@media only screen and (min-width:1250px) {
+
+    .main-title {
+        font-size: 3.75rem;
+    }
+    .sub-text {
+        font-size: 1.75rem;
+    }
+    .desc-text {
+        font-size: 1.25rem;
+    }
+    .buttons{
+        width: 90%;
+    }
+
+
+}
+
+@media only screen and (min-width:768px) {
+    .buttons{
+        width: 90%;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+
+@media only screen and (max-width:768px)
+{
+    .main-title {
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+    .img-fluid {
+        width: 75%;
+        height: auto;
+    }
+    .banner-section {
+        padding: 0;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .toggle-btn{
+        display: inline;
+    }
+}
+
+/* media only for sidebar menu */
+@media only screen and (min-width:575px)
+{
+    #sidebarMenu {  
+        width: 200px; 
+    }
+    .sidebarMenuInner{
+        padding-right: 25px;
+        text-align: center;
+        background-color:white;
+        height: 100%;
+    }
+    
+}
+
+@media only screen and (max-width:575px)
+{
+    .buttons{
+        width: 250px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

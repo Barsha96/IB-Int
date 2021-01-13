@@ -1,0 +1,181 @@
+@font-face {
+    font-family: HelveticaNeue-med;
+    src: url(../fonts/HelveticaNeue_Medium.ttf);
+}
+
+@font-face {
+    font-family: HelveticaNeue-light;
+    src: url(../fonts/HelveticaNeue_Thin.ttf);
+}
+
+@font-face {
+    font-family: HelveticaNeue-bold;
+    src: url(../fonts/HelveticaNeue_Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: HelveticaNeue-med;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+}
+
+.left {
+    background-color: #50aeb0;
+}
+
+.container {
+    padding: 0px 40px;
+}
+
+.title {
+    margin:20px 0px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* for checkbox */
+input[type=checkbox] + label {
+    display: inline-block;
+    margin: 1rem;
+}
+
+input[type=checkbox]{
+    display: none;
+
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox .checkbox-text {
+    margin: 10px 0px 10px 10px;
+    color: white;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1rem solid white;
+    border-radius: 0.3rem;
+    display: inline-block;
+    width: 1.1rem;
+    height: 0.5rem;
+    padding: 0rem 0rem 0rem 0.15rem;
+    padding-bottom: 0.9rem;
+    vertical-align: bottom;
+    font-size: 0.7rem;
+
+}
+
+input[type=checkbox]:checked + label:before {
+    background-color:white;
+    color:#50aeb0;
+}
+label{
+    font-size: 1.1rem;
+    color: white;
+    margin: 5px;
+}
+
+.terms-text {
+    color: white;
+    font-family:HelveticaNeue-light;
+    font-size: 0.9rem;
+}
+
+.register {
+    margin: 10px 0px;
+    padding: 5px 40px;
+    font-size: 1.5rem;
+    font-family: HelveticaNeue-light;
+    background-color: #50aeb0;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px; 
+}
+.register:hover {
+    background-color:#3d9c9e;
+}
+
+.buttons {
+    width: 100%;
+    margin:40px 0px;
+}
+
+.cancel {
+    padding:10px 50px;
+    background-color: #ea9941;
+    color: white;
+    font-family: HelveticaNeue-light;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.cancel:hover{
+    background-color: #d6842a;
+}
+
+.login{
+    padding:10px 50px;
+    background-color:white;
+    color: #50aeb0;
+    font-family: HelveticaNeue-light;
+    font-size: 1.2rem;
+}
+.login:hover{
+    background-color:#d4edee;
+}
+
+@media only screen and (max-width:766px) {
+    .right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:390px)
+{
+    .cancel {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .login {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width:850px)
+{
+    .form-label{
+        font-size: 0.8rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+    .cancel, .login {
+        padding:10px 40px;
+    }
+}
