@@ -145,7 +145,7 @@ html {
 .search form input {
     border: none;
     width:50px;
-    padding-top: 3px !important;
+    vertical-align: middle;
 }
 .search form input::placeholder{
     font-size: 1.2rem;
