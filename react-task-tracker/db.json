@@ -4,7 +4,7 @@
       "id": 2,
       "text": "Meeting at School",
       "day": "feb 6th at 1:30pm",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 3,
@@ -13,8 +13,8 @@
       "reminder": false
     },
     {
-      "text": "Call Dad",
-      "day": "Tuesday",
+      "text": "Get grocery",
+      "day": "2pm",
       "reminder": true,
       "id": 4
     }

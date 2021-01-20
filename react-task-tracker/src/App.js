@@ -6,6 +6,8 @@ import AddTask from './components/AddTask';
 import Footer from './components/Footer';
 import About from './components/About';
 
+// json server is used as a database server
+
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState ([])
@@ -27,7 +29,7 @@ const App = () => {
     return data
   }
 
-   // fetch task
+  // fetch task
   const fetchTask = async (id) => {
     const res = await fetch(`http://localhost:5000/tasks/${id}`)
     const data = await res.json()
