@@ -1,5 +1,6 @@
-import body_image from '../img/undraw_medicine_b1ol.png';
+import body_image from '../../img/undraw_medicine_b1ol.png';
 import styled from 'styled-components';
+import './home.css';
 import React from 'react';
 
 
@@ -26,7 +27,7 @@ const Body = ({switchMode}) =>
     return (
         <div>
             <div className="container banner-section mt-5 pt-md-5">
-                <div>
+                <div className="darkmode">
                     <input type="checkbox" id="toggle" onClick={switchMode}/>
                     <label htmlFor="toggle" className="mode">Dark Mode</label>
                 </div>

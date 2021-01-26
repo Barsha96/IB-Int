@@ -1,6 +1,7 @@
-import logo from '../img/optonome.png';
-import hamburger from '../img/hamburger2.png';
+import logo from '../../img/optonome.png';
+import hamburger from '../../img/hamburger2.png';
 import Links from './Links';
+import './home.css';
 
 const Header = () =>
 {

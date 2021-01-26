@@ -1,6 +1,9 @@
-import Header from './components/Header';
-import Body from "./components/Body";
 import React from 'react';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+import Header from './components/home/Header';
+import Body from "./components/home/Body";
+import ChatWrapper from "./components/chat/ChatWrapper"
+
 
 const App = () => 
 {
@@ -12,25 +15,31 @@ React.useEffect(()=> {changeMode()}, [darkMode]) //useEffect will watch changes 
 const changeMode = () => 
 {
   localStorage.setItem('dark', JSON.stringify(darkMode));
-    var container = document.getElementsByClassName('container');
-    var textelements = document.getElementsByClassName('mode');
+    let container = document.getElementsByClassName('container');
+    let textelements = document.getElementsByClassName('mode');
 
-    {darkMode ? document.body.style.backgroundColor = '#282828' : document.body.style.backgroundColor = 'initial' }
+    darkMode ? document.body.style.backgroundColor = '#282828' : document.body.style.backgroundColor = 'white' ;
     
-    for (var i = 0; i < container.length; i++ ) {
-        {darkMode ? container[i].style.backgroundColor = '#282828' : container[i].style.backgroundColor = 'initial' }
+    for (let i = 0; i < container.length; i++ ) {
+        darkMode ? container[i].style.backgroundColor = '#282828' : container[i].style.backgroundColor = 'initial' ;
     }
-    for (var i = 0; i < textelements.length; i++ ) {
-        {darkMode ? textelements[i].style.color = 'white' : textelements[i].style.color = 'initial' }
+    for (let i = 0; i < textelements.length; i++ ) {
+        darkMode ? textelements[i].style.color = 'white' : textelements[i].style.color = '#5d5b5b' ;
     }  
     console.log(darkMode)
 }
 
   return (
-    <>
-      <Header />
-      <Body switchMode={() => setDarkMode(!darkMode)}/>
-    </>
+    <Router>
+      <Route path='/' exact render={() => (
+              <>
+                <Header />
+                <Body switchMode={() => setDarkMode(!darkMode)}/>
+              </> 
+      )} />
+      
+      <Route path='/chat' component={ChatWrapper} />
+    </Router>
   );
 }
 
