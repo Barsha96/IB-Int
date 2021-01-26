@@ -179,6 +179,10 @@ html {
 
 .xtext {
     font-size: 1.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+   -webkit-line-clamp: 1; /* number of lines to show */
+   -webkit-box-orient: vertical;
 }
 
 
@@ -438,7 +442,7 @@ input:focus{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background:#a3e9eb; 
+    background:#a8caca; 
   }
   
   /* Handle on hover */
@@ -461,7 +465,7 @@ input:focus{
         display: inline-flex;
         cursor: pointer;
         color: #9BA1AE;
-        margin: 5px 5px 0px 5px;
+        margin: 5px 5px 5px 5px;
     }
 
     .chat {
