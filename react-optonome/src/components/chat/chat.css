@@ -449,6 +449,14 @@ input:focus{
     background: #50aeb0; 
   }
 
+
+/* profile window edit icon */
+.pencil {
+    font-size: 3rem;
+    color: #50aeb0;
+    justify-self: center;
+}
+
 @media only screen and (max-width:1050px)
 {   
     .chat-container {
