@@ -1,0 +1,127 @@
+{
+  "chat": [
+    {
+      "id": 2425,
+      "sender": "Steve",
+      "lastText": "Nice Job",
+      "time": "2 pm"
+    },
+
+    {
+      "id": 551,
+      "sender": "Sanu Rai",
+      "lastText": "Congratulations!",
+      "time": "1:15 pm"
+    },
+
+    {
+      "id": 987,
+      "sender": "Durga Prasad Upadhyaya",
+      "lastText": "Im coming",
+      "time": "10:22 am"
+    },
+
+    {
+      "id": 632,
+      "sender": "Karuna KC",
+      "lastText": "I was just out for a little while I got call from the team.. what a good timing.",
+      "time": "6 am"
+    },
+
+    {
+      "id": 333,
+      "sender": "Sita Sharma",
+      "lastText": "Its getting late",
+      "time": "yesterday"
+    },
+
+    {
+      "id": 444,
+      "sender": "Rakesh Gadtaula",
+      "lastText": "But... why?",
+      "time": "yesterday"
+    },
+
+    {
+      "id": 898,
+      "sender": "Jenie Rai",
+      "lastText": "hahahha",
+      "time": "yesterday"
+    },
+
+    {
+      "id": 543,
+      "sender": "Thor lamichhane",
+      "lastText": "I'm dead lol",
+      "time": "yesterday"
+    },
+
+    {
+      "id": 12,
+      "sender": "Asha Bhosle",
+      "lastText": "comeon sing with me",
+      "time": "20 jan"
+    },
+
+    {
+      "id": 67,
+      "sender": "Sneha Lama",
+      "lastText": "nice to talk to you",
+      "time": "18 Jan"
+    },
+
+    {
+      "id": 89,
+      "sender": "Bimina Lamichhane",
+      "lastText": "oii",
+      "time": "2 Dec"
+    },
+    {
+      "id": 90,
+      "sender": "Jason Momoa",
+      "lastText": "oii",
+      "time": "29 Nov"
+    },
+
+    {
+      "id": 77,
+      "sender": "Ian Somerhalder",
+      "lastText": "oii",
+      "time": "29 Nov"
+    },
+
+    {
+      "id": 23,
+      "sender": "Phoebe buffay",
+      "lastText": "oii",
+      "time": "28 Nov"
+    },
+
+    {
+      "id": 54,
+      "sender": "Chandler Bing",
+      "lastText": "oii",
+      "time": "15 Nov"
+    }
+  ],
+
+
+
+
+  
+
+
+
+
+
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [{
+    "name": "typicode"
+  }]
+}
