@@ -1,6 +1,6 @@
 import React from 'react';
 import ChatListItem from './ChatListItem';
-import avatar from '../../img/chatpage/avatar.png';
+
 import {BiSearch} from 'react-icons/bi';
 
 

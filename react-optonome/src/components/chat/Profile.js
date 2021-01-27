@@ -1,5 +1,4 @@
 import React from 'react';
-import avatar from '../../img/chatpage/avatar.png';
 import {ImCross} from 'react-icons/im';
 import {FaRegCalendarAlt} from 'react-icons/fa';
 import {BsFillPersonPlusFill} from 'react-icons/bs';
@@ -23,9 +22,9 @@ const Profile = () => {
             </div>
             <div className="xuser-info">
                 <div className="user-image">
-                    <img src={avatar} alt="avatar"/>
+                    <img src="https://placeimg.com/200/200/people" alt="avatar"/>
                 </div>
-                <span className="xname-profile">Shishir Pandey</span>
+                <span className="xname-profile">Steve</span>
                 <div className="xname-address">
                     Chandragiri, Kathmandu
                 </div>

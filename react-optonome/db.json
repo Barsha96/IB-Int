@@ -176,19 +176,19 @@
       "sender": "steve",
       "receiver":"barsha",
       "text": "Sure. ....",
-      "timestamp": "1611021997"
+      "timestamp": "1611020997"
     },
     {
       "sender": "steve",
       "receiver":"barsha",
       "text": "Steve Jobs",
-      "timestamp": "1611021997"
+      "timestamp": "1611021998"
     },
     {
       "sender": "steve",
       "receiver":"barsha",
       "text": "+977 987654321",
-      "timestamp": "1611021997"
+      "timestamp": "1611021897"
     },
     {
       "sender": "barsha",
@@ -200,7 +200,7 @@
       "sender": "barsha",
       "receiver":"steve",
       "text": "Thank you for contacting optonome! ",
-      "timestamp": "1611021985"
+      "timestamp": "1610021985"
     }
 
   ]

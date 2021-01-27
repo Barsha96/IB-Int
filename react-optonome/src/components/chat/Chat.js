@@ -1,6 +1,6 @@
 import React from 'react';
 import './chat.css';
-import form from '../../img/chatpage/form.png';
+// import form from '../../img/chatpage/form.png';
 import {BsFillInfoCircleFill} from 'react-icons/bs';
 
 import {VscSmiley} from 'react-icons/vsc';
@@ -49,7 +49,7 @@ const Chat = ({allChat}) => {
                 <div className="type-bar">
                     <VscSmiley className="i-emo"/>
                     <MdAddCircle className="i-emo"/>
-                    <input className="input-text" type="text" placeholder="Type Here"/>
+                    <textarea className="input-text" type="text" placeholder="Type Here"></textarea>
                     <MdSend className="i-emo"/>
                 </div>
                 

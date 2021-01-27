@@ -188,6 +188,8 @@ html {
 
 /* chat section */
 .chat{
+    display: flex;
+    flex-direction: column;
     grid-area: chat;
     padding: 10px;
     background-color:#f1f5f8;
@@ -222,7 +224,8 @@ input[type="checkbox"] {
 }
 
 .xuser-text .text{
-    min-height: 30px;
+    height: auto;
+    max-width: 300px;
     padding: 5px 15px;
     border-radius: 10px;
     background-color: white;
@@ -238,7 +241,8 @@ input[type="checkbox"] {
 }
 
 .user-text .text {
-    min-height: 30px;
+    height: auto;
+    max-width: 300px;
     padding: 5px 10px;
     border-radius: 10px;
     background-color:#50aeb0;
@@ -282,21 +286,16 @@ input[type="checkbox"] {
 .type-bar{
     display: flex;
     flex-direction: row;
+    height: auto;
     width: 100%;
-    margin: 10px 0px 0px 0px;
+    margin: auto 0px 0px 0px;
     padding: 5px;
     background-color: white;
     border-radius: 10px;
 }
-.fa-paper-plane{
-    margin-left: auto;
-}
-.type-bar .fa {
-    color: #50aeb0;
-    margin: 2.5px;
-}
+
 .input-text {
-    height: 2rem;
+    height: auto;
     width: 80%;
     padding-left: 5px;
     border: none;
