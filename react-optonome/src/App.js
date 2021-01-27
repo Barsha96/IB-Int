@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Header from './components/home/Header';
 import Body from "./components/home/Body";
-import ChatWrapper from "./components/chat/ChatWrapper"
+import ChatWrapper from "./components/chat/ChatWrapper";
+import ProfileWindow from "./components/chat/ProfileWindow";
 
 
 const App = () => 
@@ -39,6 +40,7 @@ const changeMode = () =>
       )} />
       
       <Route path='/chat' component={ChatWrapper} />
+      <Route path='/profile' component={ProfileWindow} />
     </Router>
   );
 }

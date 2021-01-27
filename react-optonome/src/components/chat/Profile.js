@@ -1,5 +1,4 @@
 import React from 'react';
-import avatar from '../../img/chatpage/avatar.png';
 import {ImCross} from 'react-icons/im';
 import {FaRegCalendarAlt} from 'react-icons/fa';
 import {BsFillPersonPlusFill} from 'react-icons/bs';
@@ -9,26 +8,13 @@ import {AiOutlineFileImage} from 'react-icons/ai';
 import {AiOutlineFileText} from 'react-icons/ai';
 
 
-// const hideProfileSection = () => {
-//     let checkBoxProfile = document.getElementById("hideProfile");
-//     let profile = document.querySelector(".profile");
-//     let chatlist = document.querySelector(".chatlist");
-
-//     if (checkBoxProfile.checked === true){
-//         document.querySelector(".chat-container").style.gridTemplateColumns="70px 300px 1fr";
-//         document.querySelector(".chat-container").style.gridTemplateAreas='"sidebar chatlist chat"';
-//         chatlist.style.display = "initial";
-//         profile.style.display = "none";
-//         checkBoxProfile.checked = false;
-//     } 
-// }
 
 const Profile = () => {
 
     return (
         <div className="profile" id="profile"> 
             <div className="profileToggle">
-                <input type="checkbox" id="hideProfile" onClick={console.log("hideProfileSection")}/>
+                <input type="checkbox" id="hideProfile" onClick={console.log("hideProfile")}/>
                 <label htmlFor="hideProfile">
                     <ImCross className="fa-times"/>
                     <i className="fa fa-times fa-2x" aria-hidden="true"></i>
@@ -36,9 +22,9 @@ const Profile = () => {
             </div>
             <div className="xuser-info">
                 <div className="user-image">
-                    <img src={avatar} alt="avatar"/>
+                    <img src="https://placeimg.com/200/200/people" alt="avatar"/>
                 </div>
-                <span className="xname-profile">Shishir Pandey</span>
+                <span className="xname-profile">Steve</span>
                 <div className="xname-address">
                     Chandragiri, Kathmandu
                 </div>
