@@ -5,7 +5,7 @@ import {BiSearch} from 'react-icons/bi';
 
 
 
-const ChatList = ({allChats}) => {
+const ChatList = ({chatList}) => {
 
     return (
         <div className="chatlist"> 
@@ -21,7 +21,7 @@ const ChatList = ({allChats}) => {
             <span>Chats</span>
 
             <div className="inbox-list">
-                {allChats.map((chat) => (
+                {chatList.map((chat) => (
                     <ChatListItem key={chat.id} chatItem={chat}/>
                 ))}
             

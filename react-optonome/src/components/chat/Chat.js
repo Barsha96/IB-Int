@@ -2,9 +2,10 @@ import React from 'react';
 import './chat.css';
 import form from '../../img/chatpage/form.png';
 import {BsFillInfoCircleFill} from 'react-icons/bs';
-import {HiLocationMarker} from 'react-icons/hi';
+
 import {VscSmiley} from 'react-icons/vsc';
 import {MdSend, MdAddCircle} from 'react-icons/md';
+import EachChat from './EachChat';
 
 
 // const showProfileSection = () => {
@@ -22,52 +23,27 @@ import {MdSend, MdAddCircle} from 'react-icons/md';
 //     } 
 //   }
       
-const Chat = () => {
-    
+const Chat = ({allChat}) => {
+
     return (
         <div className="chat"> 
-                <div className="xuser-name"><span className="name">Shishir Pandey</span>
+                <div className="xuser-name"><span className="name">Steve</span>
                     <input type="checkbox" id="showProfile" onClick={console.log('showProfileSection')}/>
                     <label htmlFor="showProfile">
                         <BsFillInfoCircleFill className="i-info"/>
                     </label>
                 </div>
                 <div className="text-wrapper">
-                <div className="xuser-text">
-                    <div className="text">Hello Optonome!</div>
-                    <div className="loc-time"><HiLocationMarker className="i-loc"/> 12:24pm </div>
-                </div>
-                <div className="user-text">
-                   <div className="text">Hello Sir, How can I help you?</div>
-                   <div className="loc-time"><HiLocationMarker className="i-loc"/> 12:24pm </div>
-                </div>
-                <div className="xuser-text">
-                    <div className="text">I want to register now...</div>
-                    <div className="loc-time"><HiLocationMarker className="i-loc"/> 12:24pm </div>
-                </div>
-                <div className="text-date">
-                    Tuesday, 23rd July 2020
-                </div>
-                <div className="user-text">
-                    <div className="text"><img src={form} alt="formimg"/></div>
-                    <div className="loc-time"><HiLocationMarker className="i-loc"/> 12:24pm </div>
-                </div>
-                <div className="user-text">
-                    <div className="text">Please fill up the form and submit</div>
-                    <div className="loc-time"><HiLocationMarker className="i-loc"/> 12:24pm </div>
-                </div>
-                <div className="xuser-text">
-                    <div className="text">Ok, Thank you.</div>
-                    <div className="loc-time"><HiLocationMarker className="i-loc"/> 12:24pm </div>
-                </div>
-                <div className="user-text">
-                    <div className="text">Also, let me know if you need anything</div>
-                    <div className="loc-time"><HiLocationMarker className="i-loc"/> 12:24pm </div>
-                </div>
-                <div className="xuser-text">
-                    <div className="text">Sure!</div>
-                    <div className="loc-time"><HiLocationMarker className="i-loc"/> 12:24pm </div>
-                </div>
+                    
+                    {allChat.map((chatData) => (
+                        <EachChat key={chatData.timestamp} chatData={chatData}/>
+                    ))}
+                    
+
+                    {/* <div className="text-date">
+                        Tuesday, 23rd July 2020
+                    </div> */}
+                
                 </div>
                 {/* need to be changed */}
                 <div className="type-bar">

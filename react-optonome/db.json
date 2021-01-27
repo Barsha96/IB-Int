@@ -4,124 +4,205 @@
       "id": 2425,
       "sender": "Steve",
       "lastText": "Nice Job",
-      "time": "2 pm"
+      "time": "2 pm",
+      "image":"https://placeimg.com/200/200/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 551,
       "sender": "Sanu Rai",
       "lastText": "Congratulations!",
-      "time": "1:15 pm"
+      "time": "1:15 pm",
+      "image":"https://placeimg.com/200/201/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 987,
       "sender": "Durga Prasad Upadhyaya",
       "lastText": "Im coming",
-      "time": "10:22 am"
+      "time": "10:22 am",
+      "image":"https://placeimg.com/200/202/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 632,
       "sender": "Karuna KC",
       "lastText": "I was just out for a little while I got call from the team.. what a good timing.",
-      "time": "6 am"
+      "time": "6 am",
+      "image":"https://placeimg.com/200/203/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 333,
       "sender": "Sita Sharma",
       "lastText": "Its getting late",
-      "time": "yesterday"
+      "time": "yesterday",
+      "image":"https://placeimg.com/200/204/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 444,
       "sender": "Rakesh Gadtaula",
       "lastText": "But... why?",
-      "time": "yesterday"
+      "time": "yesterday",
+      "image":"https://placeimg.com/200/205/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 898,
       "sender": "Jenie Rai",
       "lastText": "hahahha",
-      "time": "yesterday"
+      "time": "yesterday",
+      "image":"https://placeimg.com/200/206/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 543,
       "sender": "Thor lamichhane",
       "lastText": "I'm dead lol",
-      "time": "yesterday"
+      "time": "yesterday",
+      "image":"https://placeimg.com/200/207/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 12,
       "sender": "Asha Bhosle",
       "lastText": "comeon sing with me",
-      "time": "20 jan"
+      "time": "20 jan",
+      "image":"https://placeimg.com/200/208/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 67,
       "sender": "Sneha Lama",
       "lastText": "nice to talk to you",
-      "time": "18 Jan"
+      "time": "18 Jan",
+      "image":"https://placeimg.com/200/209/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 89,
       "sender": "Bimina Lamichhane",
-      "lastText": "oii",
-      "time": "2 Dec"
+      "lastText": "dii a aauchu la",
+      "time": "2 Dec",
+      "image":"https://placeimg.com/200/210/people",
+      "timestamp": "1611555660"
     },
     {
       "id": 90,
       "sender": "Jason Momoa",
-      "lastText": "oii",
-      "time": "29 Nov"
+      "lastText": "k khane?",
+      "time": "29 Nov",
+      "image":"https://placeimg.com/200/211/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 77,
       "sender": "Ian Somerhalder",
-      "lastText": "oii",
-      "time": "29 Nov"
+      "lastText": "haha",
+      "time": "29 Nov",
+      "image":"https://placeimg.com/200/212/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 23,
       "sender": "Phoebe buffay",
-      "lastText": "oii",
-      "time": "28 Nov"
+      "lastText": "dar lagyo",
+      "time": "28 Nov",
+      "image":"https://placeimg.com/200/213/people",
+      "timestamp": "1611555660"
     },
 
     {
       "id": 54,
       "sender": "Chandler Bing",
-      "lastText": "oii",
-      "time": "15 Nov"
+      "lastText": "could I be anymore funnier?",
+      "time": "15 Nov",
+      "image":"https://placeimg.com/200/214/people",
+      "timestamp": "1611555660"
     }
   ],
 
-
-
-
-  
-
-
-
-
-
-  "comments": [
+  "allText": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "sender": "steve",
+      "receiver":"barsha",
+      "text": "Hi, anyone out there?",
+      "timestamp": "1611555660"
+    },
+    {
+      "sender": "barsha",
+      "receiver":"steve",
+      "text": "Hello Sir, how may I help you?",
+      "timestamp": "1611731197"
+    },
+    {
+      "sender": "steve",
+      "receiver":"barsha",
+      "text": "Well, what do I need to do to register?",
+      "timestamp": "1611720397"
+    },
+    {
+      "sender": "barsha",
+      "receiver":"steve",
+      "text": "You only have to fill up a form which i'll send you in just a minute",
+      "timestamp": "1611115597"
+    },
+    {
+      "sender": "steve",
+      "receiver":"barsha",
+      "text": "great",
+      "timestamp": "1611111997"
+    },
+    {
+      "sender": "barsha",
+      "receiver":"steve",
+      "text": "Can I have your name, email address and phone number?",
+      "timestamp": "1611108397"
+    },
+    {
+      "sender": "steve",
+      "receiver":"barsha",
+      "text": "Sure. ....",
+      "timestamp": "1611021997"
+    },
+    {
+      "sender": "steve",
+      "receiver":"barsha",
+      "text": "Steve Jobs",
+      "timestamp": "1611021997"
+    },
+    {
+      "sender": "steve",
+      "receiver":"barsha",
+      "text": "+977 987654321",
+      "timestamp": "1611021997"
+    },
+    {
+      "sender": "barsha",
+      "receiver":"steve",
+      "text": "Great, I'll get back to you with the form.",
+      "timestamp": "1611021985"
+    },
+    {
+      "sender": "barsha",
+      "receiver":"steve",
+      "text": "Thank you for contacting optonome! ",
+      "timestamp": "1611021985"
     }
-  ],
-  "profile": [{
-    "name": "typicode"
-  }]
+
+  ]
+  
 }

@@ -9,26 +9,13 @@ import {AiOutlineFileImage} from 'react-icons/ai';
 import {AiOutlineFileText} from 'react-icons/ai';
 
 
-// const hideProfileSection = () => {
-//     let checkBoxProfile = document.getElementById("hideProfile");
-//     let profile = document.querySelector(".profile");
-//     let chatlist = document.querySelector(".chatlist");
-
-//     if (checkBoxProfile.checked === true){
-//         document.querySelector(".chat-container").style.gridTemplateColumns="70px 300px 1fr";
-//         document.querySelector(".chat-container").style.gridTemplateAreas='"sidebar chatlist chat"';
-//         chatlist.style.display = "initial";
-//         profile.style.display = "none";
-//         checkBoxProfile.checked = false;
-//     } 
-// }
 
 const Profile = () => {
 
     return (
         <div className="profile" id="profile"> 
             <div className="profileToggle">
-                <input type="checkbox" id="hideProfile" onClick={console.log("hideProfileSection")}/>
+                <input type="checkbox" id="hideProfile" onClick={console.log("hideProfile")}/>
                 <label htmlFor="hideProfile">
                     <ImCross className="fa-times"/>
                     <i className="fa fa-times fa-2x" aria-hidden="true"></i>
